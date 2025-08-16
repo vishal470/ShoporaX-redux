@@ -1,12 +1,68 @@
-# React + Vite
+# 🛍️ ShopEase – E-Commerce Website (Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopEase is a modern **E-Commerce web application** built with **React, Redux, and Tailwind CSS**.  
+It allows users to browse products, view details, and manage authentication with a clean, Amazon-inspired UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🔹 Modern & responsive UI with **Tailwind CSS**
+- 🔹 **Redux state management** for products & user authentication
+- 🔹 **Product catalog** with images, descriptions, and prices
+- 🔹 **Product detail page** (Amazon-style)
+- 🔹 Add to Cart (UI setup)
+- 🔹 Authentication (Login / Register with Redux)
+- 🔹 Protected routes for admin features
+- 🔹 Gradient backgrounds & modern UI components
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- ⚛️ **React.js** – Frontend library  
+- 🎨 **Tailwind CSS** – Styling  
+- 📦 **Redux Toolkit / Redux Thunk** – State management & async actions  
+- 🌐 **Axios** – API calls  
+- 🔑 **React Hook Form** – Form handling  
+- 🚏 **React Router DOM** – Navigation  
+
+---
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/your-username/shopease.git
+cd shopease
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
+```bash
+npm run dev
+```
+### 4️⃣ Build for production
+```bash
+npm run build
+```
+
+📂 Project Structure
+```csharp
+shopease/
+ ├── src/
+ │   ├── components/    # Reusable components (Nav, ProductCard, etc.)
+ │   ├── pages/         # Pages (Home, Products, Login, Register, Details)
+ │   ├── store/         # Redux store, reducers, actions
+ │   ├── App.jsx        # Main App component
+ │   └── main.jsx       # Entry point
+ ├── public/            # Static files
+ ├── package.json
+ └── README.md
+```
