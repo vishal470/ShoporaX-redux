@@ -56,18 +56,49 @@ npm run build
 📂 Project Structure
 ```csharp
 shopease/
- ├── src/
- │   ├── api/ 
- │   ├── components/    
- │   ├── pages/
- │   ├── routes/          
- │   ├── store/         
- │   ├── App.jsx
- │   ├── index.css/         
- │   └── main.jsx       
- ├── public/           
- ├── package.json
- ├── db.json
- ├── index.html 
- └── README.md
+├── .gitignore
+├── README.md
+├── db.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+    └── vite.svg
+├── src
+    ├── App.jsx
+    ├── PageNotFound.jsx
+    ├── api
+    │   └── axiosconfig.jsx
+    ├── components
+    │   └── Nav.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── pages
+    │   ├── Home.jsx
+    │   ├── Login.jsx
+    │   ├── Products.jsx
+    │   ├── ProductsDetails.jsx
+    │   ├── Register.jsx
+    │   ├── admin
+    │   │   ├── CreateProduct.jsx
+    │   │   └── UpdateProduct.jsx
+    │   └── users
+    │   │   ├── Cart.jsx
+    │   │   ├── CreateUser.jsx
+    │   │   ├── ProfileUser.jsx
+    │   │   └── UpdateUser.jsx
+    ├── routes
+    │   └── Mainroutes.jsx
+    └── store
+    │   ├── actions
+    │       ├── cartAction.jsx
+    │       ├── productAction.jsx
+    │       └── userAction.jsx
+    │   ├── reducers
+    │       ├── cartsSlice.jsx
+    │       ├── productsSlice.jsx
+    │       └── userSlice.jsx
+    │   └── store.jsx
+└── vite.config.js
 ```
