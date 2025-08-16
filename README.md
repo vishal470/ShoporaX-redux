@@ -57,12 +57,17 @@ npm run build
 ```csharp
 shopease/
  ├── src/
- │   ├── components/    # Reusable components (Nav, ProductCard, etc.)
- │   ├── pages/         # Pages (Home, Products, Login, Register, Details)
- │   ├── store/         # Redux store, reducers, actions
- │   ├── App.jsx        # Main App component
- │   └── main.jsx       # Entry point
- ├── public/            # Static files
+ │   ├── api/ 
+ │   ├── components/    
+ │   ├── pages/
+ │   ├── routes/          
+ │   ├── store/         
+ │   ├── App.jsx
+ │   ├── index.css/         
+ │   └── main.jsx       
+ ├── public/           
  ├── package.json
+ ├── db.json
+ ├── index.html 
  └── README.md
 ```
