@@ -4,8 +4,15 @@
       "id": "0",
       "username": "Vishal",
       "email": "sharmavishal@gmail.com",
-      "password": "789654",
+      "password": "123456",
       "isAdmin": true
+    },
+    {
+      "id": "g4y7BQRZp0K2jBQkREbr1",
+      "username": "Hello",
+      "email": "hello@gmail.com",
+      "password": "147",
+      "isAdmin": false
     }
   ],
   "products": [
