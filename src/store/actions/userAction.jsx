@@ -1,8 +1,8 @@
 // import axios from "../api/axiosconfig";
 // import { loaduser } from "./userSlice";
 
-import { loaduser, removeuser } from "../reducers/userSlice";l
-import axios from "../../api/axiosconfig" 
+import axios from "../../api/axiosconfig"
+import { loaduser, removeuser } from "../reducers/userSlice";
 
 
 
