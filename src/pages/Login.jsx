@@ -20,7 +20,7 @@ const Login = () => {
   const LoginHandler = (user) => {
     user.id = nanoid();
     dispatch(asyncloginuser(user));
-    // navigate('/')
+    navigate('/products')
   }
 
 

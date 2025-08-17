@@ -1,17 +1,16 @@
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
-import { asynclogoutuser } from '../store/actions/userAction';
+// import { asynclogoutuser } from '../store/actions/userAction';
 
 const Nav = () => {
 
     const user = useSelector((state) => state.userReducer.users);
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    const LogoutHandler = () => {
-        dispatch(asynclogoutuser());
-    }
+    // const LogoutHandler = () => {
+    //     dispatch(asynclogoutuser());
+    // }
     return (
         <nav className="flex justify-center items-center gap-x-6 p-8 bg-gray-800 text-white shadow-md">
             <NavLink
@@ -38,7 +37,15 @@ const Nav = () => {
                         >
                             Create-Product
                         </NavLink>
-                        <button onClick={LogoutHandler}>Log Out</button>
+
+                        <NavLink
+                            to="/admin/user-profile"
+                            className="hover:text-yellow-400 transition"
+                        >
+                            Settings
+                        </NavLink>
+
+                        {/* <button onClick={LogoutHandler}>Log Out</button> */}
                     </>
 
                 ) : (

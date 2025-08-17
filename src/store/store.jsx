@@ -7,13 +7,6 @@ import productSlice from './reducers/productsSlice'
 import cartSlice from './reducers/cartsSlice'
 
 
-
-// export const store = configureStore({
-//     reducer: {
-//         user: userSlice
-//     },
-// })
-
 export const store = configureStore({
     reducer: {
         userReducer: userSlice,
@@ -21,3 +14,10 @@ export const store = configureStore({
         cartsReducer: cartSlice
     }
 })
+
+
+// export const store = configureStore({
+//     reducer: {
+//         user: userSlice
+//     },
+// })
