@@ -4,23 +4,29 @@ import { Link } from "react-router-dom";
 import { asyncupdateuser } from "../store/actions/userAction";
 
 const Products = () => {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   const product = useSelector((state) => state.productsReducer.products);
   const user = useSelector((state) => state.userReducer.users);
 
-  const AddtoCartHandler = (id) => {
+  const AddtoCartHandler = (product) => {
     const copyuser = { ...user, carts: [...user.carts] };
-    const x = copyuser.carts.findIndex((i) => i.id == id);
 
-    if (x == -1) {
-      copyuser.carts.push({ productId: id, quantity: 1 });
+    const index = copyuser.carts.findIndex((item) => item.product.id == product.id);
+    // console.log(index)
+
+    if (index == -1) {
+      copyuser.carts.push({ product, quantity: 1 });
+    } else {
+      copyuser.carts[index] = {
+        product,
+        quantity: copyuser.carts[index].quantity + 1,
+      };
     }
-    else {
-      copyuser.carts[x].quantity += 1;
-    }
-    dispatch(asyncupdateuser(copyuser.id,copyuser));
-    console.log(copyuser);
-  }
+
+    dispatch(asyncupdateuser(copyuser.id, copyuser));
+    console.log("Updated cart:", copyuser.carts);
+  };
+
 
   const renderProduct = product?.map((product) => {
     return (
@@ -39,7 +45,7 @@ const Products = () => {
           <p className="text-xl font-bold text-green-600">₹{product.price}</p>
 
           <button
-            onClick={AddtoCartHandler}
+            onClick={() => AddtoCartHandler(product)}
             className="px-4 py-2 bg-blue-600 text-white text-sm rounded-xl hover:bg-blue-700 cursor-pointer"
           >
             Add to Cart
