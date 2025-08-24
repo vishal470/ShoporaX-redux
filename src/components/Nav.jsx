@@ -46,6 +46,13 @@ const Nav = () => {
             Settings
           </NavLink>
 
+          <NavLink
+            to="/cart"
+            className="hover:text-yellow-400 transition"
+          >
+            Cart
+          </NavLink>
+
           {/* <button onClick={LogoutHandler}>Log Out</button> */}
         </>
       ) : (
@@ -55,6 +62,7 @@ const Nav = () => {
         >
           Login
         </NavLink>
+
       )}
     </nav>
   )
