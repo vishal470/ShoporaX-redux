@@ -1,17 +1,23 @@
 import { useEffect } from 'react';
 import Nav from './components/Nav';
 import Mainroutes from './routes/Mainroutes'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { asynccurrentuser } from './store/actions/userAction';
 import { asyncloadproduct } from './store/actions/productAction';
 const App = () => {
 
   const dispatch = useDispatch();
 
+  const { users } = useSelector(state => state.userReducer); 
+  const { products } = useSelector(state => state.productsReducer);
+
   useEffect(() => {
-    dispatch(asynccurrentuser());
-    dispatch(asyncloadproduct());
-  }, [])
+    !users && dispatch(asynccurrentuser());
+  }, [users])
+
+  useEffect(() => {
+    products.length == 0 && dispatch(asyncloadproduct());
+  }, [products])
 
 
   return (

@@ -25,30 +25,30 @@ const Cart = () => {
     // This function should update the user's cart state
     const copyuser = { ...user, carts: [...user.carts] };
 
-  if (copyuser.carts[index].quantity > 1) {
-    // Only decrease if quantity is greater than 1
-    copyuser.carts[index] = {
-      ...copyuser.carts[index],
-      quantity: copyuser.carts[index].quantity - 1
+    if (copyuser.carts[index].quantity > 1) {
+      // Only decrease if quantity is greater than 1
+      copyuser.carts[index] = {
+        ...copyuser.carts[index],
+        quantity: copyuser.carts[index].quantity - 1
+      }
+    } else {
+      // If quantity is 1, remove the item from the cart
+      copyuser.carts.splice(index, 1);
     }
-  }else {
-    // If quantity is 1, remove the item from the cart
-    copyuser.carts.splice(index, 1);
-  }
     dispatch(asyncupdateuser(copyuser.id, copyuser));
   }
 
   const cartItems = user?.carts?.map((item, index) => (
     <div
       key={item.product.id}
-      className="bg-white shadow-md rounded-2xl p-4 flex flex-col sm:flex-row gap-4 items-center border hover:shadow-lg transition m-2"
+      className="bg-white shadow-md rounded-2xl p-4 flex flex-col sm:flex-row sm:items-start gap-6 border hover:shadow-lg transition m-2"
     >
       {/* Product Image */}
-      <div className="w-28 h-28 flex-shrink-0">
+      <div className="w-28 h-28 flex-shrink-0 flex items-center justify-center bg-gray-100 rounded-lg">
         <img
           src={item.product.image}
           alt={item.product.title}
-          className="w-full h-full object-contain rounded-lg"
+          className="w-full h-full object-contain p-2"
         />
       </div>
 
@@ -64,12 +64,15 @@ const Cart = () => {
           ₹{item.product.price}
         </p>
 
-        <div className="flex items-center gap-2 mt-3">
-          <button 
-          onClick={() => DecreaseQuantityHandler(index, item)}
-          className="px-3 py-1 bg-gray-200 rounded-lg"
-          >-</button>
-          <span className="px-4">{item.quantity}</span>
+        {/* Quantity Buttons */}
+        <div className="flex items-center gap-3 mt-3">
+          <button
+            onClick={() => DecreaseQuantityHandler(index, item)}
+            className="px-3 py-1 bg-gray-200 rounded-lg hover:bg-gray-300"
+          >
+            -
+          </button>
+          <span className="px-4 font-medium">{item.quantity}</span>
           <button
             onClick={() => IncreaseQuantityHandler(index, item)}
             className="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600"
@@ -79,6 +82,7 @@ const Cart = () => {
         </div>
       </div>
     </div>
+
   ));
 
 

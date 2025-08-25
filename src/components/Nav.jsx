@@ -28,7 +28,7 @@ const Nav = () => {
       </NavLink>
 
       {/* Conditional user navigation */}
-      {user ? (
+      {user && user.id ? (
         <>
           {user?.isAdmin && (
             <NavLink

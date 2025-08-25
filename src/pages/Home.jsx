@@ -47,7 +47,7 @@ const Home = () => {
             >
               Shop Now
             </Link>
-            {user ?
+            {user && user.id ?
               <>
                 <button
                   onClick={LogoutHandler}

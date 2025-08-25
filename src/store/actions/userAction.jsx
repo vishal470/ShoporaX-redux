@@ -40,6 +40,7 @@ export const asyncloginuser = (user) => async (dispatch, getState) => {
         // const res=axios.post("/users",user);
         console.log(data[0])
         localStorage.setItem("user", JSON.stringify(data[0]));
+        dispatch(asynccurrentuser());
     } catch (error) {
         console.log(error)
     }
@@ -69,7 +70,7 @@ export const asyncupdateuser = (id, user) => async (dispatch, getState) => {
 
 export const asyncdeleteuser = (id) => async (dispatch, getState) => {
     try {
-        await axios.delete("/users/" + id); 
+        await axios.delete("/users/" + id);
         dispatch(asynclogoutuser());
     } catch (error) {
         console.error("Error updating product:", error);
