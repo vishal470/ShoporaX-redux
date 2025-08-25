@@ -6,7 +6,19 @@
       "email": "sharmavishal@gmail.com",
       "password": "123456",
       "isAdmin": true,
-      "carts": []
+      "carts": [
+        {
+          "product": {
+            "id": "123",
+            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+          },
+          "quantity": 1
+        }
+      ]
     },
     {
       "id": "g4y7BQRZp0K2jBQkREbr1",
@@ -18,414 +30,415 @@
     }
   ],
   "products": [
-    {
-      "id": "123",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
-    },
-    {
-      "id": "1",
-      "title": "Sample Product 1",
-      "price": 359.81,
-      "description": "This is a placeholder description for Sample Product 1.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-1/600/600"
-    },
-    {
-      "id": "2",
-      "title": "Sample Product 2",
-      "price": 169.71,
-      "description": "This is a placeholder description for Sample Product 2.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-2/600/600"
-    },
-    {
-      "id": "3",
-      "title": "Sample Product 3",
-      "price": 58.99,
-      "description": "This is a placeholder description for Sample Product 3.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-3/600/600"
-    },
-    {
-      "id": "4",
-      "title": "Sample Product 4",
-      "price": 209.48,
-      "description": "This is a placeholder description for Sample Product 4.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-4/600/600"
-    },
-    {
-      "id": "5",
-      "title": "Sample Product 5",
-      "price": 363.75,
-      "description": "This is a placeholder description for Sample Product 5.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-5/600/600"
-    },
-    {
-      "id": "6",
-      "title": "Sample Product 6",
-      "price": 73.74,
-      "description": "This is a placeholder description for Sample Product 6.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-6/600/600"
-    },
-    {
-      "id": "7",
-      "title": "Sample Product 7",
-      "price": 877.26,
-      "description": "This is a placeholder description for Sample Product 7.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-7/600/600"
-    },
-    {
-      "id": "8",
-      "title": "Sample Product 8",
-      "price": 414.51,
-      "description": "This is a placeholder description for Sample Product 8.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-8/600/600"
-    },
-    {
-      "id": "9",
-      "title": "Sample Product 9",
-      "price": 513.12,
-      "description": "This is a placeholder description for Sample Product 9.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-9/600/600"
-    },
-    {
-      "id": "10",
-      "title": "Sample Product 10",
-      "price": 613.88,
-      "description": "This is a placeholder description for Sample Product 10.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-10/600/600"
-    },
-    {
-      "id": "11",
-      "title": "Sample Product 11",
-      "price": 736.61,
-      "description": "This is a placeholder description for Sample Product 11.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-11/600/600"
-    },
-    {
-      "id": "12",
-      "title": "Sample Product 12",
-      "price": 406,
-      "description": "This is a placeholder description for Sample Product 12.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-12/600/600"
-    },
-    {
-      "id": "13",
-      "title": "Sample Product 13",
-      "price": 309.28,
-      "description": "This is a placeholder description for Sample Product 13.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-13/600/600"
-    },
-    {
-      "id": "14",
-      "title": "Sample Product 14",
-      "price": 41.76,
-      "description": "This is a placeholder description for Sample Product 14.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-14/600/600"
-    },
-    {
-      "id": "15",
-      "title": "Sample Product 15",
-      "price": 381.89,
-      "description": "This is a placeholder description for Sample Product 15.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-15/600/600"
-    },
-    {
-      "id": "16",
-      "title": "Sample Product 16",
-      "price": 387.96,
-      "description": "This is a placeholder description for Sample Product 16.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-16/600/600"
-    },
-    {
-      "id": "17",
-      "title": "Sample Product 17",
-      "price": 892.19,
-      "description": "This is a placeholder description for Sample Product 17.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-17/600/600"
-    },
-    {
-      "id": "18",
-      "title": "Sample Product 18",
-      "price": 763.17,
-      "description": "This is a placeholder description for Sample Product 18.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-18/600/600"
-    },
-    {
-      "id": "19",
-      "title": "Sample Product 19",
-      "price": 381.37,
-      "description": "This is a placeholder description for Sample Product 19.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-19/600/600"
-    },
-    {
-      "id": "20",
-      "title": "Sample Product 20",
-      "price": 345.74,
-      "description": "This is a placeholder description for Sample Product 20.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-20/600/600"
-    },
-    {
-      "id": "21",
-      "title": "Sample Product 21",
-      "price": 790.25,
-      "description": "This is a placeholder description for Sample Product 21.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-21/600/600"
-    },
-    {
-      "id": "22",
-      "title": "Sample Product 22",
-      "price": 802.7,
-      "description": "This is a placeholder description for Sample Product 22.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-22/600/600"
-    },
-    {
-      "id": "23",
-      "title": "Sample Product 23",
-      "price": 211.9,
-      "description": "This is a placeholder description for Sample Product 23.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-23/600/600"
-    },
-    {
-      "id": "24",
-      "title": "Sample Product 24",
-      "price": 284.22,
-      "description": "This is a placeholder description for Sample Product 24.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-24/600/600"
-    },
-    {
-      "id": "25",
-      "title": "Sample Product 25",
-      "price": 210.66,
-      "description": "This is a placeholder description for Sample Product 25.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-25/600/600"
-    },
-    {
-      "id": "26",
-      "title": "Sample Product 26",
-      "price": 62.99,
-      "description": "This is a placeholder description for Sample Product 26.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-26/600/600"
-    },
-    {
-      "id": "27",
-      "title": "Sample Product 27",
-      "price": 444.95,
-      "description": "This is a placeholder description for Sample Product 27.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-27/600/600"
-    },
-    {
-      "id": "28",
-      "title": "Sample Product 28",
-      "price": 495.6,
-      "description": "This is a placeholder description for Sample Product 28.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-28/600/600"
-    },
-    {
-      "id": "29",
-      "title": "Sample Product 29",
-      "price": 170.77,
-      "description": "This is a placeholder description for Sample Product 29.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-29/600/600"
-    },
-    {
-      "id": "30",
-      "title": "Sample Product 30",
-      "price": 462.72,
-      "description": "This is a placeholder description for Sample Product 30.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-30/600/600"
-    },
-    {
-      "id": "31",
-      "title": "Sample Product 31",
-      "price": 132.99,
-      "description": "This is a placeholder description for Sample Product 31.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-31/600/600"
-    },
-    {
-      "id": "32",
-      "title": "Sample Product 32",
-      "price": 324.83,
-      "description": "This is a placeholder description for Sample Product 32.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-32/600/600"
-    },
-    {
-      "id": "33",
-      "title": "Sample Product 33",
-      "price": 31.33,
-      "description": "This is a placeholder description for Sample Product 33.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-33/600/600"
-    },
-    {
-      "id": "34",
-      "title": "Sample Product 34",
-      "price": 86.88,
-      "description": "This is a placeholder description for Sample Product 34.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-34/600/600"
-    },
-    {
-      "id": "35",
-      "title": "Sample Product 35",
-      "price": 874.91,
-      "description": "This is a placeholder description for Sample Product 35.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-35/600/600"
-    },
-    {
-      "id": "36",
-      "title": "Sample Product 36",
-      "price": 732.28,
-      "description": "This is a placeholder description for Sample Product 36.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-36/600/600"
-    },
-    {
-      "id": "37",
-      "title": "Sample Product 37",
-      "price": 713.55,
-      "description": "This is a placeholder description for Sample Product 37.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-37/600/600"
-    },
-    {
-      "id": "38",
-      "title": "Sample Product 38",
-      "price": 730.32,
-      "description": "This is a placeholder description for Sample Product 38.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-38/600/600"
-    },
-    {
-      "id": "39",
-      "title": "Sample Product 39",
-      "price": 244.7,
-      "description": "This is a placeholder description for Sample Product 39.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-39/600/600"
-    },
-    {
-      "id": "40",
-      "title": "Sample Product 40",
-      "price": 307.56,
-      "description": "This is a placeholder description for Sample Product 40.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-40/600/600"
-    },
-    {
-      "id": "41",
-      "title": "Sample Product 41",
-      "price": 108.79,
-      "description": "This is a placeholder description for Sample Product 41.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-41/600/600"
-    },
-    {
-      "id": "42",
-      "title": "Sample Product 42",
-      "price": 459.74,
-      "description": "This is a placeholder description for Sample Product 42.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-42/600/600"
-    },
-    {
-      "id": "43",
-      "title": "Sample Product 43",
-      "price": 885.16,
-      "description": "This is a placeholder description for Sample Product 43.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-43/600/600"
-    },
-    {
-      "id": "44",
-      "title": "Sample Product 44",
-      "price": 865.88,
-      "description": "This is a placeholder description for Sample Product 44.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-44/600/600"
-    },
-    {
-      "id": "45",
-      "title": "Sample Product 45",
-      "price": 171.41,
-      "description": "This is a placeholder description for Sample Product 45.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-45/600/600"
-    },
-    {
-      "id": "46",
-      "title": "Sample Product 46",
-      "price": 886.54,
-      "description": "This is a placeholder description for Sample Product 46.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-46/600/600"
-    },
-    {
-      "id": "47",
-      "title": "Sample Product 47",
-      "price": 239.87,
-      "description": "This is a placeholder description for Sample Product 47.",
-      "category": "electronics",
-      "image": "https://picsum.photos/seed/prod-47/600/600"
-    },
-    {
-      "id": "48",
-      "title": "Sample Product 48",
-      "price": 37.34,
-      "description": "This is a placeholder description for Sample Product 48.",
-      "category": "jewelery",
-      "image": "https://picsum.photos/seed/prod-48/600/600"
-    },
-    {
-      "id": "49",
-      "title": "Sample Product 49",
-      "price": 613.5,
-      "description": "This is a placeholder description for Sample Product 49.",
-      "category": "men's clothing",
-      "image": "https://picsum.photos/seed/prod-49/600/600"
-    },
-    {
-      "id": "50",
-      "title": "Sample Product 50",
-      "price": 405.33,
-      "description": "This is a placeholder description for Sample Product 50.",
-      "category": "women's clothing",
-      "image": "https://picsum.photos/seed/prod-50/600/600"
-    }
-  ],
+  {
+    "id": "123",
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+  },
+  {
+    "id": "1",
+    "title": "Classic Denim Jacket",
+    "price": 359.81,
+    "description": "This is a placeholder description for Sample Product 1.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-1/600/600"
+  },
+  {
+    "id": "2",
+    "title": "Elegant Floral Dress",
+    "price": 169.71,
+    "description": "This is a placeholder description for Sample Product 2.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-2/600/600"
+  },
+  {
+    "id": "3",
+    "title": "Noise Cancelling Headphones",
+    "price": 58.99,
+    "description": "This is a placeholder description for Sample Product 3.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-3/600/600"
+  },
+  {
+    "id": "4",
+    "title": "Gold-Plated Pendant Necklace",
+    "price": 209.48,
+    "description": "This is a placeholder description for Sample Product 4.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-4/600/600"
+  },
+  {
+    "id": "5",
+    "title": "Slim Fit Cotton Shirt",
+    "price": 363.75,
+    "description": "This is a placeholder description for Sample Product 5.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-5/600/600"
+  },
+  {
+    "id": "6",
+    "title": "Chic Summer Skirt",
+    "price": 73.74,
+    "description": "This is a placeholder description for Sample Product 6.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-6/600/600"
+  },
+  {
+    "id": "7",
+    "title": "Smartphone with AMOLED Display",
+    "price": 877.26,
+    "description": "This is a placeholder description for Sample Product 7.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-7/600/600"
+  },
+  {
+    "id": "8",
+    "title": "Diamond Stud Earrings",
+    "price": 414.51,
+    "description": "This is a placeholder description for Sample Product 8.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-8/600/600"
+  },
+  {
+    "id": "9",
+    "title": "Casual Cotton Hoodie",
+    "price": 513.12,
+    "description": "This is a placeholder description for Sample Product 9.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-9/600/600"
+  },
+  {
+    "id": "10",
+    "title": "Silk Evening Gown",
+    "price": 613.88,
+    "description": "This is a placeholder description for Sample Product 10.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-10/600/600"
+  },
+  {
+    "id": "11",
+    "title": "Wireless Gaming Mouse",
+    "price": 736.61,
+    "description": "This is a placeholder description for Sample Product 11.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-11/600/600"
+  },
+  {
+    "id": "12",
+    "title": "Rose Gold Bracelet",
+    "price": 406,
+    "description": "This is a placeholder description for Sample Product 12.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-12/600/600"
+  },
+  {
+    "id": "13",
+    "title": "Casual Polo T-Shirt",
+    "price": 309.28,
+    "description": "This is a placeholder description for Sample Product 13.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-13/600/600"
+  },
+  {
+    "id": "14",
+    "title": "Bohemian Maxi Dress",
+    "price": 41.76,
+    "description": "This is a placeholder description for Sample Product 14.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-14/600/600"
+  },
+  {
+    "id": "15",
+    "title": "4K Ultra HD Smart TV",
+    "price": 381.89,
+    "description": "This is a placeholder description for Sample Product 15.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-15/600/600"
+  },
+  {
+    "id": "16",
+    "title": "Sapphire Gemstone Ring",
+    "price": 387.96,
+    "description": "This is a placeholder description for Sample Product 16.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-16/600/600"
+  },
+  {
+    "id": "17",
+    "title": "Premium Leather Jacket",
+    "price": 892.19,
+    "description": "This is a placeholder description for Sample Product 17.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-17/600/600"
+  },
+  {
+    "id": "18",
+    "title": "Casual Knit Sweater",
+    "price": 763.17,
+    "description": "This is a placeholder description for Sample Product 18.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-18/600/600"
+  },
+  {
+    "id": "19",
+    "title": "Bluetooth Portable Speaker",
+    "price": 381.37,
+    "description": "This is a placeholder description for Sample Product 19.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-19/600/600"
+  },
+  {
+    "id": "20",
+    "title": "Emerald Drop Necklace",
+    "price": 345.74,
+    "description": "This is a placeholder description for Sample Product 20.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-20/600/600"
+  },
+  {
+    "id": "21",
+    "title": "Formal Blazer",
+    "price": 790.25,
+    "description": "This is a placeholder description for Sample Product 21.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-21/600/600"
+  },
+  {
+    "id": "22",
+    "title": "Trendy Crop Top",
+    "price": 802.7,
+    "description": "This is a placeholder description for Sample Product 22.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-22/600/600"
+  },
+  {
+    "id": "23",
+    "title": "High-Speed Laptop",
+    "price": 211.9,
+    "description": "This is a placeholder description for Sample Product 23.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-23/600/600"
+  },
+  {
+    "id": "24",
+    "title": "Pearl Drop Earrings",
+    "price": 284.22,
+    "description": "This is a placeholder description for Sample Product 24.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-24/600/600"
+  },
+  {
+    "id": "25",
+    "title": "Casual Slim Jeans",
+    "price": 210.66,
+    "description": "This is a placeholder description for Sample Product 25.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-25/600/600"
+  },
+  {
+    "id": "26",
+    "title": "Stylish Midi Dress",
+    "price": 62.99,
+    "description": "This is a placeholder description for Sample Product 26.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-26/600/600"
+  },
+  {
+    "id": "27",
+    "title": "Wireless Earbuds Pro",
+    "price": 444.95,
+    "description": "This is a placeholder description for Sample Product 27.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-27/600/600"
+  },
+  {
+    "id": "28",
+    "title": "Ruby Engagement Ring",
+    "price": 495.6,
+    "description": "This is a placeholder description for Sample Product 28.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-28/600/600"
+  },
+  {
+    "id": "29",
+    "title": "Casual Cotton Shorts",
+    "price": 170.77,
+    "description": "This is a placeholder description for Sample Product 29.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-29/600/600"
+  },
+  {
+    "id": "30",
+    "title": "Vintage Party Dress",
+    "price": 462.72,
+    "description": "This is a placeholder description for Sample Product 30.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-30/600/600"
+  },
+  {
+    "id": "31",
+    "title": "Portable Tablet",
+    "price": 132.99,
+    "description": "This is a placeholder description for Sample Product 31.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-31/600/600"
+  },
+  {
+    "id": "32",
+    "title": "Gold Charm Bracelet",
+    "price": 324.83,
+    "description": "This is a placeholder description for Sample Product 32.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-32/600/600"
+  },
+  {
+    "id": "33",
+    "title": "Graphic Print T-Shirt",
+    "price": 31.33,
+    "description": "This is a placeholder description for Sample Product 33.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-33/600/600"
+  },
+  {
+    "id": "34",
+    "title": "Casual Tank Top",
+    "price": 86.88,
+    "description": "This is a placeholder description for Sample Product 34.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-34/600/600"
+  },
+  {
+    "id": "35",
+    "title": "Gaming Console",
+    "price": 874.91,
+    "description": "This is a placeholder description for Sample Product 35.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-35/600/600"
+  },
+  {
+    "id": "36",
+    "title": "Platinum Wedding Ring",
+    "price": 732.28,
+    "description": "This is a placeholder description for Sample Product 36.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-36/600/600"
+  },
+  {
+    "id": "37",
+    "title": "Casual Bomber Jacket",
+    "price": 713.55,
+    "description": "This is a placeholder description for Sample Product 37.",
+    "category": "men's clothing",
+    "image": "httpsum.photos/seed/prod-37/600/600"
+  },
+  {
+    "id": "38",
+    "title": "Summer Maxi Skirt",
+    "price": 730.32,
+    "description": "This is a placeholder description for Sample Product 38.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-38/600/600"
+  },
+  {
+    "id": "39",
+    "title": "Wireless Bluetooth Keyboard",
+    "price": 244.7,
+    "description": "This is a placeholder description for Sample Product 39.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-39/600/600"
+  },
+  {
+    "id": "40",
+    "title": "Diamond Tennis Bracelet",
+    "price": 307.56,
+    "description": "This is a placeholder description for Sample Product 40.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-40/600/600"
+  },
+  {
+    "id": "41",
+    "title": "Slim Fit Chinos",
+    "price": 108.79,
+    "description": "This is a placeholder description for Sample Product 41.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-41/600/600"
+  },
+  {
+    "id": "42",
+    "title": "Elegant Cocktail Dress",
+    "price": 459.74,
+    "description": "This is a placeholder description for Sample Product 42.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-42/600/600"
+  },
+  {
+    "id": "43",
+    "title": "DSLR Camera",
+    "price": 885.16,
+    "description": "This is a placeholder description for Sample Product 43.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-43/600/600"
+  },
+  {
+    "id": "44",
+    "title": "White Gold Pendant",
+    "price": 865.88,
+    "description": "This is a placeholder description for Sample Product 44.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-44/600/600"
+  },
+  {
+    "id": "45",
+    "title": "Casual Cotton Shirt",
+    "price": 171.41,
+    "description": "This is a placeholder description for Sample Product 45.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-45/600/600"
+  },
+  {
+    "id": "46",
+    "title": "Trendy Wrap Dress",
+    "price": 886.54,
+    "description": "This is a placeholder description for Sample Product 46.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-46/600/600"
+  },
+  {
+    "id": "47",
+    "title": "Smart Fitness Watch",
+    "price": 239.87,
+    "description": "This is a placeholder description for Sample Product 47.",
+    "category": "electronics",
+    "image": "https://picsum.photos/seed/prod-47/600/600"
+  },
+  {
+    "id": "48",
+    "title": "Silver Anklet",
+    "price": 37.34,
+    "description": "This is a placeholder description for Sample Product 48.",
+    "category": "jewelery",
+    "image": "https://picsum.photos/seed/prod-48/600/600"
+  },
+  {
+    "id": "49",
+    "title": "Woolen Winter Sweater",
+    "price": 613.5,
+    "description": "This is a placeholder description for Sample Product 49.",
+    "category": "men's clothing",
+    "image": "https://picsum.photos/seed/prod-49/600/600"
+  },
+  {
+    "id": "50",
+    "title": "Summer Beach Dress",
+    "price": 405.33,
+    "description": "This is a placeholder description for Sample Product 50.",
+    "category": "women's clothing",
+    "image": "https://picsum.photos/seed/prod-50/600/600"
+  }
+],
+
   "carts": []
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { asyncupdateuser } from "../store/actions/userAction";
@@ -14,6 +14,7 @@ const Products = () => {
 
   const [product, setProduct] = useState([]);
   const [hasMore, sethasMore] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const fetchProducts = async () => {
     try {
@@ -28,7 +29,8 @@ const Products = () => {
       }
 
     } catch (error) {
-      console.log(error)
+      console.log(error);
+      sethasMore(false);
     }
   }
 
@@ -58,8 +60,17 @@ const Products = () => {
   };
 
 
-  const renderProduct = product?.map((product) => {
+  const filterProducts = product.filter((items) =>
+    items.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+
+
+
+
+  const renderProduct = filterProducts?.map((product) => {
     return (
+
       <div
         key={product.id}
         className="bg-white shadow-md rounded-2xl p-4 flex flex-col hover:shadow-xl transition"
@@ -93,12 +104,14 @@ const Products = () => {
     );
   });
 
-  return product && product.length > 0 ? (
+  return (
+
+
 
     <InfiniteScroll
       dataLength={product.length}
       next={fetchProducts}
-      hasMore={true}
+      hasMore={hasMore}
       loader={<h4>Loading...</h4>}
       endMessage={
         <p style={{ textAlign: 'center' }}>
@@ -109,19 +122,24 @@ const Products = () => {
 
 
       <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-8">
+        <input
+          type="text"
+          placeholder="Search products..."
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full max-w-md px-4 py-3 mb-6 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm transition-all duration-200 outline-none placeholder-gray-400 text-gray-700"
+        />
         <h1 className="text-2xl font-bold mb-6">Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {renderProduct}
+          <Suspense fallback={<h1>Loading....</h1>}>
+            {renderProduct}
+          </Suspense>
         </div>
       </div>
 
 
     </InfiniteScroll>
-  ) : (
-    <div className="flex justify-center items-center min-h-screen text-xl font-medium text-gray-500">
-      Loading...
-    </div>
-  );
+
+  )
 };
 
 export default Products;
