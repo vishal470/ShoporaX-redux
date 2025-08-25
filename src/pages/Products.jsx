@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { asyncupdateuser } from "../store/actions/userAction";
+import axios from "../api/axiosconfig";
+
+import InfiniteScroll from "react-infinite-scroll-component"
 
 const Products = () => {
   const dispatch = useDispatch();
-  const product = useSelector((state) => state.productsReducer.products);
   const user = useSelector((state) => state.userReducer.users);
+
+  // const product = useSelector((state) => state.products  Reducer.products);
+
+  const [product, setProduct] = useState([]);
+  const [hasMore, sethasMore] = useState(true);
+
+  const fetchProducts = async () => {
+    try {
+      const { data } = await axios.get(`/products?_start=${product.length}&_limit=6`);
+
+      if (data.length == 0) {
+        sethasMore(false);
+      }
+      else {
+        sethasMore(true);
+        setProduct([...product, ...data]);
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+
+    fetchProducts();
+
+  }, [])
 
   const AddtoCartHandler = (product) => {
     const copyuser = { ...user, carts: [...user.carts] };
@@ -64,12 +94,29 @@ const Products = () => {
   });
 
   return product && product.length > 0 ? (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-8">
-      <h1 className="text-2xl font-bold mb-6">Products</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {renderProduct}
+
+    <InfiniteScroll
+      dataLength={product.length}
+      next={fetchProducts}
+      hasMore={true}
+      loader={<h4>Loading...</h4>}
+      endMessage={
+        <p style={{ textAlign: 'center' }}>
+          <b>Yay! You have seen it all</b>
+        </p>
+      }
+    >
+
+
+      <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-8">
+        <h1 className="text-2xl font-bold mb-6">Products</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {renderProduct}
+        </div>
       </div>
-    </div>
+
+
+    </InfiniteScroll>
   ) : (
     <div className="flex justify-center items-center min-h-screen text-xl font-medium text-gray-500">
       Loading...
